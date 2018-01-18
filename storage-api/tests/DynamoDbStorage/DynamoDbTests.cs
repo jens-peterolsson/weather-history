@@ -2,6 +2,7 @@ using System;
 using Xunit;
 using Shouldly;
 using TestStack.BDDfy;
+using TestStack.BDDfy.Xunit;
 using api.Storage;
 
 namespace tests.DynamoDbStorage
@@ -18,11 +19,6 @@ namespace tests.DynamoDbStorage
         {
         }
 
-        [Fact]
-        public void CreatesAllTables()
-        {
-            this.BDDfy();
-        }
 
         void GivenConnection()
         {
@@ -34,6 +30,12 @@ namespace tests.DynamoDbStorage
 
         void ThenExpectedTablesShouldExist()
         {
+        }
+
+        [BddfyFact]
+        public void CreatesAllTables()
+        {
+            this.BDDfy();
         }
     }
 }

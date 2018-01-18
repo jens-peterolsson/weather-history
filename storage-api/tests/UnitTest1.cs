@@ -2,6 +2,7 @@ using System;
 using Xunit;
 using Shouldly;
 using TestStack.BDDfy;
+using TestStack.BDDfy.Xunit;
 using api;
 
 namespace tests
@@ -10,11 +11,6 @@ namespace tests
     {
         private int _arg1, _arg2;
 
-        [Fact]
-        public void CanMultiply()
-        {
-            this.BDDfy();
-        }
 
         void GivenISetArg1ToFive()
         {
@@ -29,6 +25,12 @@ namespace tests
         void ThenResultShouldBe250()
         {
             DummyForTest.Multiply(_arg1, _arg2).ShouldBe(250);
+        }
+
+        [BddfyFact]
+        public void CanMultiply()
+        {
+            this.BDDfy();
         }
     }
 }
