@@ -5,7 +5,7 @@ const csvParse = require("neat-csv");
 function isDate(value) {
   if (!value) return false;
 
-  const date = value.replace(/\-/g, "");
+  const date = value.replace(/-/g, "");
   const isExpectedDateFormat = date.length === 8 && !isNaN(date);
 
   return isExpectedDateFormat;

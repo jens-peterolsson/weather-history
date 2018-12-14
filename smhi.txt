@@ -9,10 +9,19 @@ vindhastighet medelvärde 10 min, 1 gång/tim: 4
 nederbördsmängd summa 1 dygn, 1 gång/dygn, kl 06: 5
 solskenstid summa 1 timme, 1 gång/tim: 10
 
+Hämta
+
+Använd nivån ovan och attributet "updated" för att avgöra om nytt data finns eller inte, t.ex.
+https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/2/station/53260/period/
+
+Behöver vid laddning förmodligen läsa flera stationer för en ort för att få all historik och för den som uppdatera
+nu både latest-months och latest-day utöver corrected-archive
+
 stationer
 
 66420 kalmar flygplats
-53260 ystad
+53260 ystad (bara data till 1983)
+52350 Malmö A
 98210 stockholm
 
 Ex.

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha *.spec.js"
+    "test": "mocha *.spec.js",
+    "coverage": "nyc --reporter=text npm test"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +13,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.7.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
   },
   "dependencies": {
     "neat-csv": "^3.0.0"
