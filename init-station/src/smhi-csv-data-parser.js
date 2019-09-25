@@ -9,7 +9,7 @@ function isDate(value) {
   return isExpectedDateFormat;
 }
 
-function isTemperature(value) {
+function isCorrectNumericValue(value) {
   if (!value) return false;
 
   const asInteger = value.replace(/\./, '');
@@ -18,20 +18,20 @@ function isTemperature(value) {
   return isInteger;
 }
 
-async function parse(data) {
+async function parse(data, dateHeader, valueHeader) {
   const output = await csvParse(data, {
     trim: true,
     skip_empty_lines: true,
     separator: ';',
-    headers: ['', '', 'Representativt dygn', 'Lufttemperatur'],
+    headers: ['', '', dateHeader, valueHeader],
     mapHeaders: header => {
-      if (header === 'Representativt dygn') return 'Date';
-      if (header === 'Lufttemperatur') return 'Celcius';
+      if (header === dateHeader) return 'Date';
+      if (header === valueHeader) return 'Value';
       return '';
     }
   });
 
-  const result = output.filter(o => isDate(o.Date) && isTemperature(o.Celcius));
+  const result = output.filter(o => isDate(o.Date) && isCorrectNumericValue(o.Value));
   return result;
 }
 

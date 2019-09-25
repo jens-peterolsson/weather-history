@@ -25,7 +25,6 @@ stationer
 98210 stockholm
 
 Ex.
-https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/2/station/53260/period/corrected-archive/data.csv
-
-https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/2/station/66420/period/latest-day/data.json
+https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/2/station/98210/period/corrected-archive/data.csv
+https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/2/station/98210/period/latest-months/data.json
 

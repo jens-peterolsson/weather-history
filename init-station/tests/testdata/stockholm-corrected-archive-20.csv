@@ -1,0 +1,26 @@
+﻿Stationsnamn;Klimatnummer;Mäthöjd (meter över marken)
+Stockholm;98210;2.0
+
+Parameternamn;Beskrivning;Enhet
+Lufttemperatur;max, 1 gång per dygn;degree celsius
+
+Tidsperiod (fr.o.m);Tidsperiod (t.o.m);Höjd (meter över havet);Latitud (decimalgrader);Longitud (decimalgrader)
+1859-01-01 00:00:00;2019-08-31 23:59:59;43.133;59.3417;18.0549
+
+Från Datum Tid (UTC);Till Datum Tid (UTC);Representativt dygn;Lufttemperatur;Kvalitet;;Tidsutsnitt:
+1929-12-31 20:00:01;1930-01-01 20:00:00;1930-01-01;2.5;G;;Kvalitetskontrollerade historiska data (utom de senaste 3 mån)
+1930-01-01 20:00:01;1930-01-02 20:00:00;1930-01-02;3.0;G;;Tidsperiod (fr.o.m.) = 1859-01-01 00:00:00 (UTC)
+1930-01-02 20:00:01;1930-01-03 20:00:00;1930-01-03;5.0;G;;Tidsperiod (t.o.m.) = 2019-06-01 06:00:00 (UTC)
+1930-01-03 20:00:01;1930-01-04 20:00:00;1930-01-04;6.0;G;;Samplingstid = 24 timmar
+1930-01-04 20:00:01;1930-01-05 20:00:00;1930-01-05;4.5;G;;
+1930-01-05 20:00:01;1930-01-06 20:00:00;1930-01-06;5.0;G;;Kvalitetskoderna:
+1930-01-06 20:00:01;1930-01-07 20:00:00;1930-01-07;6.0;G;;Grön (G) = Kontrollerade och godkända värden.
+1930-01-07 20:00:01;1930-01-08 20:00:00;1930-01-08;8.0;G;;Gul (Y) = Misstänkta eller aggregerade värden. Grovt kontrollerade arkivdata och okontrollerade realtidsdata (senaste 2 tim).
+1930-01-08 20:00:01;1930-01-09 20:00:00;1930-01-09;4.5;G;;
+1930-01-09 20:00:01;1930-01-10 20:00:00;1930-01-10;4.0;G;;Orsaker till saknade data:
+1930-01-10 20:00:01;1930-01-11 20:00:00;1930-01-11;4.0;G;;  stationen eller givaren har varit ur funktion.
+1930-01-11 20:00:01;1930-01-12 20:00:00;1930-01-12;4.0;G
+1930-01-12 20:00:01;1930-01-13 20:00:00;1930-01-13;3.0;G
+1930-01-13 20:00:01;1930-01-14 20:00:00;1930-01-14;6.0;G
+2019-05-25 18:00:01;2019-05-26 18:00:00;2019-05-26;14.4;Y
+2019-05-26 18:00:01;2019-05-27 18:00:00;2019-05-27;13.4;Y
