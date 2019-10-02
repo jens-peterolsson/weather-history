@@ -2,11 +2,11 @@
 
 Prepare:
 
-- setup local mongo in project
-- add needed dependencies, checkout udemy app (tasks?)
+- npm i!
 - prep smhi data
-
-- Doc for mongoose/mongo aggregate and date handling
+- env-file to switch db between local and prod
+- verify script to start mongo + gui tool
+- Doc for mongoose/mongo query, aggregate and date handling
 
 b.CollectionNameGoesHere.aggregate({ $match: {
     $and: [
