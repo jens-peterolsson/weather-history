@@ -14,4 +14,4 @@ b.CollectionNameGoesHere.aggregate({ $match: {
         { hour: { $lte: 12 } }
     ]
 } },
-{ $group: { _id : null, sum : { $sum: "$incoming" } } });
+{ $group: { _id : null, sum : { $sum: "$incoming" } } }); 
