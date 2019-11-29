@@ -1,13 +1,12 @@
 Parametrar
 
 Parameter for avg/temp per day: 2
-temperatur min, 1 gång per dygn: 19
-temperatur max, 1 gång per dygn: 20
-parameter nederbörd/dygn summa: 5
-snödjup momentanvärde, 1 gång/dygn, kl 06: 8
 vindhastighet medelvärde 10 min, 1 gång/tim: 4
 nederbördsmängd summa 1 dygn, 1 gång/dygn, kl 06: 5
+snödjup momentanvärde, 1 gång/dygn, kl 06: 8
 solskenstid summa 1 timme, 1 gång/tim: 10
+temperatur min, 1 gång per dygn: 19
+temperatur max, 1 gång per dygn: 20
 
 Hämta
 
