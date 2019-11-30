@@ -1,0 +1,79 @@
+{
+  "value": [
+    {
+      "from": 1565892001000,
+      "to": 1565978400000,
+      "ref": "2019-08-16",
+      "value": "22.5",
+      "quality": "Y"
+    },
+    {
+      "from": 1574877601000,
+      "to": 1574964000000,
+      "ref": "2019-11-28",
+      "value": "7.5",
+      "quality": "Y"
+    }
+  ],
+  "updated": 1574985600000,
+  "parameter": {
+    "key": "20",
+    "name": "Lufttemperatur",
+    "summary": "max, 1 gång per dygn",
+    "unit": "degree celsius"
+  },
+  "station": {
+    "key": "98210",
+    "name": "Stockholm",
+    "owner": "SMHI",
+    "height": 2
+  },
+  "period": {
+    "key": "latest-months",
+    "from": 1563753601000,
+    "to": 1575032400000,
+    "summary": "Data från senaste fyra månaderna",
+    "sampling": "24 timmar"
+  },
+  "position": [
+    {
+      "from": -3502828800000,
+      "to": 1575032400000,
+      "height": 43.133,
+      "latitude": 59.3417,
+      "longitude": 18.0549
+    }
+  ],
+  "link": [
+    {
+      "rel": "data",
+      "type": "application/json",
+      "href": "https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/20/station/98210/period/latest-months/data.json"
+    },
+    {
+      "rel": "data",
+      "type": "application/xml",
+      "href": "https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/20/station/98210/period/latest-months/data.xml"
+    },
+    {
+      "rel": "data",
+      "type": "text/plain",
+      "href": "https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/20/station/98210/period/latest-months/data.csv"
+    },
+    {
+      "rel": "period",
+      "type": "application/atom+xml",
+      "href": "https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/20/station/98210/period/latest-months.atom"
+    },
+    {
+      "rel": "iso19139",
+      "type": "application/vnd.iso.19139+xml",
+      "href": "https://opendata-catalog.smhi.se/catalog/srv/eng/csw?request=GetRecordById&service=CSW&version=2.0.2&elementSetName=full&outputSchema=csw:IsoRecord&id=25080190-38ba-4279-a65d-d9ef8d0bf949"
+    },
+    {
+      "rel": "iso19139",
+      "type": "application/vnd.iso.19139+xml",
+      "href": "https://opendata-catalog.smhi.se/catalog/srv/eng/csw?request=GetRecordById&service=CSW&version=2.0.2&elementSetName=full&outputSchema=csw:IsoRecord&id=2b84284b-4e01-48ee-8f40-5792c42579f2"
+    }
+  ]
+}
