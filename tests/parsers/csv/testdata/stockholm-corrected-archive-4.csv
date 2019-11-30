@@ -1,0 +1,28 @@
+﻿Stationsnamn;Klimatnummer;Mäthöjd (meter över marken)
+Stockholm;98210;10.0
+
+Parameternamn;Beskrivning;Enhet
+Vindhastighet;medelvärde 10 min, 1 gång/tim;metre per second
+
+Tidsperiod (fr.o.m);Tidsperiod (t.o.m);Höjd (meter över havet);Latitud (decimalgrader);Longitud (decimalgrader)
+1961-01-01 00:00:00;2019-10-31 23:59:59;43.133;59.3417;18.0549
+
+Datum;Tid (UTC);Vindhastighet;Kvalitet;;Tidsutsnitt:
+1961-01-01;06:00:00;1.0;G;;Kvalitetskontrollerade historiska data (utom de senaste 3 mån)
+1961-01-01;12:00:00;1.0;G;;Tidsperiod (fr.o.m.) = 1961-01-01 00:00:00 (UTC)
+1961-01-01;18:00:00;4.0;G;;Tidsperiod (t.o.m.) = 2019-08-01 06:00:00 (UTC)
+1961-01-02;06:00:00;1.0;G;;Samplingstid = 10 minuter
+1961-01-02;12:00:00;1.0;G;;
+1961-01-02;18:00:00;1.0;G;;Kvalitetskoderna:
+1961-01-03;06:00:00;2.0;G;;Grön (G) = Kontrollerade och godkända värden.
+1961-01-03;12:00:00;4.0;G;;Gul (Y) = Misstänkta eller aggregerade värden. Grovt kontrollerade arkivdata och okontrollerade realtidsdata (senaste 2 tim).
+1961-01-03;18:00:00;7.0;G;;
+1961-01-04;06:00:00;1.0;G;;Orsaker till saknade data:
+1961-01-04;12:00:00;2.0;G;;  stationen eller givaren har varit ur funktion.
+1961-01-04;18:00:00;1.0;G
+1961-01-05;06:00:00;2.0;G
+1961-01-05;12:00:00;1.0;G
+1961-01-05;18:00:00;1.0;G
+1961-01-06;06:00:00;2.0;G
+2019-07-01;06:00:00;9.5;G
+2019-07-01;12:00:00;7.5;G
