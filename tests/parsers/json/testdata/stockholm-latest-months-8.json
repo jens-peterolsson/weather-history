@@ -1,0 +1,67 @@
+{
+  "value": [
+    { "date": 1570428000000, "value": "0.00", "quality": "G" },
+    { "date": 1574748000000, "value": "0.21", "quality": "G" }
+  ],
+  "updated": 1574985600000,
+  "parameter": {
+    "key": "8",
+    "name": "Snödjup",
+    "summary": "momentanvärde, 1 gång/dygn, kl 06",
+    "unit": "metre"
+  },
+  "station": {
+    "key": "98210",
+    "name": "Stockholm",
+    "owner": "SMHI",
+    "height": 0
+  },
+  "period": {
+    "key": "latest-months",
+    "from": 1563753601000,
+    "to": 1575032400000,
+    "summary": "Data från senaste fyra månaderna",
+    "sampling": "Ej angivet"
+  },
+  "position": [
+    {
+      "from": -2429827200000,
+      "to": 1575032400000,
+      "height": 43.133,
+      "latitude": 59.3417,
+      "longitude": 18.0549
+    }
+  ],
+  "link": [
+    {
+      "rel": "data",
+      "type": "application/json",
+      "href": "https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/8/station/98210/period/latest-months/data.json"
+    },
+    {
+      "rel": "data",
+      "type": "application/xml",
+      "href": "https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/8/station/98210/period/latest-months/data.xml"
+    },
+    {
+      "rel": "data",
+      "type": "text/plain",
+      "href": "https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/8/station/98210/period/latest-months/data.csv"
+    },
+    {
+      "rel": "period",
+      "type": "application/atom+xml",
+      "href": "https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/8/station/98210/period/latest-months.atom"
+    },
+    {
+      "rel": "iso19139",
+      "type": "application/vnd.iso.19139+xml",
+      "href": "https://opendata-catalog.smhi.se/catalog/srv/eng/csw?request=GetRecordById&service=CSW&version=2.0.2&elementSetName=full&outputSchema=csw:IsoRecord&id=25080190-38ba-4279-a65d-d9ef8d0bf949"
+    },
+    {
+      "rel": "iso19139",
+      "type": "application/vnd.iso.19139+xml",
+      "href": "https://opendata-catalog.smhi.se/catalog/srv/eng/csw?request=GetRecordById&service=CSW&version=2.0.2&elementSetName=full&outputSchema=csw:IsoRecord&id=76fd0da7-1e91-4ad3-a88b-8c2f89b0b2e0"
+    }
+  ]
+}
