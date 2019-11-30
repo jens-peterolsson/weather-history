@@ -1,8 +1,8 @@
 const fs = require('fs');
-const parser = require('../src/smhi-csv-parser-temperature');
+const parser = require('../../../src/parsers/csv/smhi-csv-parser-temperature');
 
 const csvData = fs.readFileSync(
-  './tests/testdata/stockholm-corrected-archive-20.csv',
+  './tests/parsers/csv/testdata/stockholm-corrected-archive-20.csv',
   'utf8'
 );
 
