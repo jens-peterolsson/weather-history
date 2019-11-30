@@ -10,15 +10,16 @@ describe('SMHI data parser parameter 20', () => {
   it('should parse file into objects', async () => {
     const parsed = await parser.parse(csvData, {
       dateHeader: { index: 3, text: 'Representativt dygn' },
-      valueHeader: { index: 4, text: 'Lufttemperatur' }
+      valueHeader: { index: 4, text: 'Lufttemperatur' },
+      valueAttributeName: 'temperatureMax'
     });
 
     expect(parsed.length).toEqual(16);
-    expect(parsed[0].Date).toEqual('1930-01-01');
-    expect(parsed[0].Value).toEqual('2.5');
-    expect(parsed[7].Date).toEqual('1930-01-08');
-    expect(parsed[7].Value).toEqual('8.0');
-    expect(parsed[15].Date).toEqual('2019-05-27');
-    expect(parsed[15].Value).toEqual('13.4');
+    expect(parsed[0].date).toEqual('1930-01-01');
+    expect(parsed[0].temperatureMax).toEqual('2.5');
+    expect(parsed[7].date).toEqual('1930-01-08');
+    expect(parsed[7].temperatureMax).toEqual('8.0');
+    expect(parsed[15].date).toEqual('2019-05-27');
+    expect(parsed[15].temperatureMax).toEqual('13.4');
   });
 });
