@@ -1,23 +1,16 @@
 const axios = require('axios');
 const fs = require('fs');
+const parameters = require('./constants/parameters');
 
-// 10 = not for corrected
-const weatherParametersToRetrieve = [2, 4, 5, 8, 19, 20];
-const dataTypes = [
-  { type: 'latest-months', extension: 'json' },
-  { type: 'corrected-archive', extension: 'csv' }
-];
-
-// array with items for: file extension, parameter type, correction or latest and timestamp, loop and promise.all
 (async () => {
   const weatherCalls = [];
 
-  weatherParametersToRetrieve.map(parameter =>
-    dataTypes.map(dataType =>
+  parameters.weatherParameterTypes.map(parameter =>
+    parameters.weatherDataSources.map(dataSource =>
       weatherCalls.push({
-        url: `https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/${parameter}/station/98210/period/${dataType.type}/data.${dataType.extension}`,
+        url: `https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/${parameter}/station/98210/period/${dataSource.type}/data.${dataSource.extension}`,
         parameter,
-        dataType
+        dataType: dataSource
       })
     )
   );
