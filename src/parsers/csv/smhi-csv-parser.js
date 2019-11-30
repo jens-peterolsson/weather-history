@@ -1,8 +1,11 @@
 const csvParse = require('neat-csv');
 const validator = require('../../validators/weatherDateValidator');
 const dateAverageCalculator = require('../dateAverageCalculator');
+const parameters = require('../../constants/parameters');
 
-async function parse(data, options) {
+async function parse(data, parameterType) {
+  const options = parameters.getOptions(parameterType, 'csv');
+
   const headers = setHeaders(options);
 
   const output = await csvParse(data, {

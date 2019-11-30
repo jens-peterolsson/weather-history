@@ -8,11 +8,7 @@ const jsonData = fs.readFileSync(
 
 describe('SMHI json data parser parameter 20', () => {
   it('should parse file into objects', async () => {
-    const parsed = await parser.parse(jsonData, {
-      dateHeader: { text: 'ref' },
-      valueHeader: { text: 'value' },
-      valueAttributeName: 'temperatureMax'
-    });
+    const parsed = await parser.parse(jsonData, '20');
 
     expect(parsed.length).toEqual(2);
     expect(parsed[0].date).toEqual('2019-08-16');

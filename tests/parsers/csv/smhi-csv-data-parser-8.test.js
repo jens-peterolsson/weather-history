@@ -8,11 +8,7 @@ const csvData = fs.readFileSync(
 
 describe('SMHI csv data parser parameter 8', () => {
   it('should parse file into objects', async () => {
-    const parsed = await parser.parse(csvData, {
-      dateHeader: { index: 1, text: 'Datum' },
-      valueHeader: { index: 3, text: 'Snödjup' },
-      valueAttributeName: 'snowDepth'
-    });
+    const parsed = await parser.parse(csvData, '8');
 
     expect(parsed.length).toEqual(19);
     expect(parsed[0].date).toEqual('1893-01-15');
