@@ -1,3 +1,5 @@
+function composeFromFiles(folderPaths, updateTypes) {}
+
 function compose(sources) {
   const result = [];
 

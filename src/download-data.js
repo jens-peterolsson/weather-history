@@ -49,7 +49,7 @@ const parameters = require('./constants/parameters');
     }
 
     fs.writeFileSync(
-      `../example-data/${date}-parameter-${response.parameter}-${response.dataType.type}.${response.dataType.extension}`,
+      `../data/${date}-parameter-${response.parameter}-${response.dataType.type}.${response.dataType.extension}`,
       weatherData
     );
   });
