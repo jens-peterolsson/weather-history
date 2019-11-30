@@ -6,7 +6,7 @@ const jsonData = fs.readFileSync(
   'utf8'
 );
 
-describe('SMHI data parser parameter 2', () => {
+describe('SMHI json data parser parameter 2', () => {
   it('should parse file into objects', async () => {
     const parsed = await parser.parse(jsonData, {
       dateHeader: { text: 'ref' },

@@ -7,7 +7,13 @@ async function parse(data, options) {
   const values = json.value;
 
   const output = values.map(value => {
-    const weatherItem = { date: value[options.dateHeader.text] };
+    let dateValue = value[options.dateHeader.text];
+
+    if (!validator.isDate(dateValue)) {
+      dateValue = new Date(dateValue).toISOString().substr(0, 10);
+    }
+
+    const weatherItem = { date: dateValue };
     weatherItem[options.valueAttributeName] = value[options.valueHeader.text];
 
     return weatherItem;

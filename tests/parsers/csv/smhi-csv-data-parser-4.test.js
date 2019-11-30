@@ -6,7 +6,7 @@ const csvData = fs.readFileSync(
   'utf8'
 );
 
-describe('SMHI data parser parameter 4', () => {
+describe('SMHI csv data parser parameter 4', () => {
   it('should parse file into objects', async () => {
     const parsed = await parser.parse(csvData, {
       dateHeader: { index: 1, text: 'Datum' },
