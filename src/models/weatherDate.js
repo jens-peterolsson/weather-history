@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const validator = require('validator');
 const weatherValidator = require('../validators/weatherDateValidator');
 
 const weatherDateSchema = new mongoose.Schema({

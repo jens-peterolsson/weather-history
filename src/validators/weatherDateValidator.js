@@ -13,14 +13,12 @@ function isDate(value) {
 }
 
 function isCorrectNumericValue(value) {
-  if (!value) return false;
+  if (value === undefined || value === null) return false;
 
   const stringValue = value.toString();
   const asInteger = stringValue.replace(/\./, '');
 
-  const isIntegerWhenRemovingDecimalPoint =
-    stringValue.includes('.') && validator.isInt(asInteger);
-
+  const isIntegerWhenRemovingDecimalPoint = validator.isInt(asInteger);
   return isIntegerWhenRemovingDecimalPoint;
 }
 
