@@ -1,0 +1,29 @@
+﻿Stationsnamn;Klimatnummer;Mäthöjd (meter över marken)
+Stockholm;98210;0.0
+
+Parameternamn;Beskrivning;Enhet
+Snödjup;momentanvärde, 1 gång/dygn, kl 06;metre
+
+Tidsperiod (fr.o.m);Tidsperiod (t.o.m);Höjd (meter över havet);Latitud (decimalgrader);Longitud (decimalgrader)
+1893-01-01 00:00:00;2019-11-02 03:00:00;43.133;59.3417;18.0549
+
+Datum;Tid (UTC);Snödjup;Kvalitet;;Tidsutsnitt:
+1893-01-15;07:00:00;0.20;G;;Kvalitetskontrollerade historiska data (utom de senaste 3 mån)
+1893-01-31;07:00:00;0.25;G;;Tidsperiod (fr.o.m.) = 1893-01-01 00:00:00 (UTC)
+1893-02-01;07:00:00;0.27;G;;Tidsperiod (t.o.m.) = 2019-08-01 06:00:00 (UTC)
+1893-02-17;07:00:00;0.37;G;;Samplingstid = Ej angivet
+1893-03-01;07:00:00;0.45;G;;
+1893-03-14;07:00:00;0.35;G;;Kvalitetskoderna:
+1893-03-22;07:00:00;0.10;G;;Grön (G) = Kontrollerade och godkända värden.
+1895-01-08;07:00:00;0.03;G;;Gul (Y) = Misstänkta eller aggregerade värden. Grovt kontrollerade arkivdata och okontrollerade realtidsdata (senaste 2 tim).
+1895-01-19;07:00:00;0.21;G;;
+1895-01-23;07:00:00;0.27;G;;Orsaker till saknade data:
+1895-02-08;07:00:00;0.45;G;;  stationen eller givaren har varit ur funktion.
+1895-03-12;07:00:00;0.58;G
+1897-01-21;07:00:00;0.19;G
+1897-01-31;07:00:00;0.40;G
+1897-02-01;07:00:00;0.40;G
+1897-12-07;07:00:00;0.37;G
+1898-02-25;07:00:00;0.32;G
+2010-12-22;06:00:00;0.37;G
+2019-02-16;06:00:00;0.00;G
