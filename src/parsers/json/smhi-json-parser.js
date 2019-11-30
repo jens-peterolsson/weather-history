@@ -3,7 +3,15 @@ const dateAverageCalculator = require('../dateAverageCalculator');
 
 async function parse(data, options) {
   // parse json
-  const output = [];
+  const json = JSON.parse(data);
+  const values = json.value;
+
+  const output = values.map(value => {
+    const weatherItem = { date: value[options.dateHeader.text] };
+    weatherItem[options.valueAttributeName] = value[options.valueHeader.text];
+
+    return weatherItem;
+  });
 
   let result = output.filter(
     o =>

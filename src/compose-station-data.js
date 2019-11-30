@@ -1,4 +1,4 @@
-function composeFromFiles(folderPaths, updateTypes) {}
+function composeFromFiles(folderPath, updateTypes) {}
 
 function compose(sources) {
   const result = [];
