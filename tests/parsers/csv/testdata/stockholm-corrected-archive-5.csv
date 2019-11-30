@@ -1,0 +1,27 @@
+﻿Stationsnamn;Klimatnummer;Mäthöjd (meter över marken)
+Stockholm;98210;2.0
+
+Parameternamn;Beskrivning;Enhet
+Nederbördsmängd;summa 1 dygn, 1 gång/dygn, kl 06;millimetre
+
+Tidsperiod (fr.o.m);Tidsperiod (t.o.m);Höjd (meter över havet);Latitud (decimalgrader);Longitud (decimalgrader)
+1859-01-01 00:00:00;2019-11-02 01:00:00;43.133;59.3417;18.0549
+
+Från Datum Tid (UTC);Till Datum Tid (UTC);Representativt dygn;Nederbördsmängd;Kvalitet;;Tidsutsnitt:
+1859-01-01 07:00:01;1859-01-02 07:00:00;1859-01-01;0.0;G;;Kvalitetskontrollerade historiska data (utom de senaste 3 mån)
+1859-01-02 07:00:01;1859-01-03 07:00:00;1859-01-02;0.0;G;;Tidsperiod (fr.o.m.) = 1859-01-01 00:00:00 (UTC)
+1859-01-03 07:00:01;1859-01-04 07:00:00;1859-01-03;0.9;G;;Tidsperiod (t.o.m.) = 2019-08-01 06:00:00 (UTC)
+1859-01-04 07:00:01;1859-01-05 07:00:00;1859-01-04;0.0;G;;Värdet är summerat över = 24 timmar
+1859-01-05 07:00:01;1859-01-06 07:00:00;1859-01-05;0.0;G;;
+1859-01-06 07:00:01;1859-01-07 07:00:00;1859-01-06;0.0;G;;Kvalitetskoderna:
+1859-01-07 07:00:01;1859-01-08 07:00:00;1859-01-07;0.0;G;;Grön (G) = Kontrollerade och godkända värden.
+1859-01-08 07:00:01;1859-01-09 07:00:00;1859-01-08;0.0;G;;Gul (Y) = Misstänkta eller aggregerade värden. Grovt kontrollerade arkivdata och okontrollerade realtidsdata (senaste 2 tim).
+1859-01-09 07:00:01;1859-01-10 07:00:00;1859-01-09;0.0;G;;
+1859-01-10 07:00:01;1859-01-11 07:00:00;1859-01-10;0.0;G;;Orsaker till saknade data:
+1859-01-11 07:00:01;1859-01-12 07:00:00;1859-01-11;0.7;G;;  stationen eller givaren har varit ur funktion.
+1859-01-12 07:00:01;1859-01-13 07:00:00;1859-01-12;0.0;G
+1859-01-13 07:00:01;1859-01-14 07:00:00;1859-01-13;0.0;G
+1859-01-14 07:00:01;1859-01-15 07:00:00;1859-01-14;0.0;G
+1859-02-13 07:00:01;1859-02-14 07:00:00;1859-02-13;1.5;G
+2018-08-22 06:00:01;2018-08-23 06:00:00;2018-08-22;0.0;Y
+2018-08-23 06:00:01;2018-08-24 06:00:00;2018-08-23;0.0;Y
