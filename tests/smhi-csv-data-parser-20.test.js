@@ -1,11 +1,18 @@
 const fs = require('fs');
-const parser = require('../src/smhi-csv-data-parser');
+const parser = require('../src/smhi-csv-parser-temperature');
 
-const csvData = fs.readFileSync('./tests/testdata/stockholm-corrected-archive-20.csv', 'utf8');
+const csvData = fs.readFileSync(
+  './tests/testdata/stockholm-corrected-archive-20.csv',
+  'utf8'
+);
 
-describe('SMHI data parser', () => {
+describe('SMHI data parser parameter 20', () => {
   it('should parse file into objects', async () => {
-    const parsed = await parser.parse(csvData,  'Representativt dygn', 'Lufttemperatur');
+    const parsed = await parser.parse(
+      csvData,
+      'Representativt dygn',
+      'Lufttemperatur'
+    );
 
     expect(parsed.length).toEqual(16);
     expect(parsed[0].Date).toEqual('1930-01-01');

@@ -1,0 +1,24 @@
+﻿Stationsnamn;Klimatnummer;Mäthöjd (meter över marken)
+Stockholm;98210;2.0
+
+Parameternamn;Beskrivning;Enhet
+Lufttemperatur;min, 1 gång per dygn;degree celsius
+
+Tidsperiod (fr.o.m);Tidsperiod (t.o.m);Höjd (meter över havet);Latitud (decimalgrader);Longitud (decimalgrader)
+1859-01-01 00:00:00;2019-10-31 23:59:59;43.133;59.3417;18.0549
+
+Från Datum Tid (UTC);Till Datum Tid (UTC);Representativt dygn;Lufttemperatur;Kvalitet;;Tidsutsnitt:
+1881-12-31 20:00:01;1882-01-01 20:00:00;1882-01-01;-1.2;G;;Kvalitetskontrollerade historiska data (utom de senaste 3 mån)
+1882-01-01 20:00:01;1882-01-02 20:00:00;1882-01-02;1.0;G;;Tidsperiod (fr.o.m.) = 1859-01-01 00:00:00 (UTC)
+1882-01-02 20:00:01;1882-01-03 20:00:00;1882-01-03;2.2;G;;Tidsperiod (t.o.m.) = 2019-08-01 06:00:00 (UTC)
+1882-01-03 20:00:01;1882-01-04 20:00:00;1882-01-04;-1.0;G;;Samplingstid = 24 timmar
+1882-01-04 20:00:01;1882-01-05 20:00:00;1882-01-05;-4.0;G;;
+1882-01-05 20:00:01;1882-01-06 20:00:00;1882-01-06;0.4;G;;Kvalitetskoderna:
+1882-01-06 20:00:01;1882-01-07 20:00:00;1882-01-07;2.0;G;;Grön (G) = Kontrollerade och godkända värden.
+1882-01-07 20:00:01;1882-01-08 20:00:00;1882-01-08;-3.0;G;;Gul (Y) = Misstänkta eller aggregerade värden. Grovt kontrollerade arkivdata och okontrollerade realtidsdata (senaste 2 tim).
+1882-01-08 20:00:01;1882-01-09 20:00:00;1882-01-09;-1.6;G;;
+1882-01-09 20:00:01;1882-01-10 20:00:00;1882-01-10;-1.0;G;;Orsaker till saknade data:
+1882-01-10 20:00:01;1882-01-11 20:00:00;1882-01-11;-1.2;G;;  stationen eller givaren har varit ur funktion.
+1882-01-11 20:00:01;1882-01-12 20:00:00;1882-01-12;-6.0;G
+1882-01-12 20:00:01;1882-01-13 20:00:00;1882-01-13;-7.5;G
+2014-06-15 18:00:01;2014-06-16 18:00:00;2014-06-16;11.7;Y
