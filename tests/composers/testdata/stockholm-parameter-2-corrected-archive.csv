@@ -1,0 +1,12 @@
+﻿Stationsnamn;Klimatnummer;Mäthöjd (meter över marken)
+Stockholm;98210;2.0
+
+Parameternamn;Beskrivning;Enhet
+Lufttemperatur;medelvärde 1 dygn, 1 gång/dygn, kl 00;degree celsius
+
+Tidsperiod (fr.o.m);Tidsperiod (t.o.m);Höjd (meter över havet);Latitud (decimalgrader);Longitud (decimalgrader)
+1859-01-01 00:00:00;2019-11-01 13:00:00;43.133;59.3417;18.0549
+
+Från Datum Tid (UTC);Till Datum Tid (UTC);Representativt dygn;Lufttemperatur;Kvalitet;;Tidsutsnitt:
+1859-01-01 00:00:01;1859-01-02 00:00:00;1859-01-01;0.2;Y;;Kvalitetskontrollerade historiska data (utom de senaste 3 mån)
+2019-06-30 00:00:01;2019-07-01 00:00:00;2019-06-30;22.2;Y
