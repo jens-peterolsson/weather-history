@@ -10,12 +10,13 @@ const WeatherData = require('./models/weatherDate');
     parameters.latestMonthsType
   ]);
 
-  const promises = data.map(async item => {
-    const weatherDataEntity = new WeatherData(item);
+  await Promise.all(
+    data.map(async item => {
+      const filter = { date: item.date };
 
-    // test findByIdAndUpdate?
-    await weatherDataEntity.save();
-  });
-
-  await Promise.all(promises);
+      return WeatherData.findOneAndUpdate(filter, item, {
+        upsert: true
+      });
+    })
+  );
 })();
