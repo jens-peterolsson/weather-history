@@ -1,29 +1,23 @@
-require('./db/mongoose');
+const repo = require('./db/sqlRepo');
 
 const composer = require('./composers/compose-station-data');
 const parameters = require('./constants/parameters');
-const WeatherData = require('./models/weatherDate');
 
 (async () => {
   const data = await composer.composeFromFiles('tempdata', [
-    parameters.correctedArchiveType
-    // parameters.latestMonthsType
+    // parameters.correctedArchiveType
+    parameters.latestMonthsType
   ]);
 
   for (let ix = 0; ix < data.length; ix += 1) {
     const item = data[ix];
-    const filter = { date: item.date };
-
-    console.log(item);
 
     try {
       // eslint-disable-next-line no-await-in-loop
-      await WeatherData.findOneAndUpdate(filter, item, {
-        upsert: true,
-        new: true
-      });
+      await repo.upsert(item);
     } catch (err) {
       console.log(err);
+      return;
     }
   }
 })();
