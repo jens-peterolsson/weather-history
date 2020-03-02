@@ -4,7 +4,7 @@ const username = process.env.MYSQL_USER;
 const password = process.env.MYSQL_PASS;
 const database = 'weatherdata';
 const table = 'weatherdates';
-const host = 'localhost';
+const host = process.env.MYSQL_HOST || 'localhost';
 const dialect = 'mysql';
 
 const sequelize = new Sequelize(database, username, password, {
