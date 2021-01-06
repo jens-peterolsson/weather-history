@@ -51,7 +51,7 @@
         ],
         "arrow-parens": [
             "error",
-            "as-needed"
+            "always"
         ],
         "no-unused-vars": [
             "warn",

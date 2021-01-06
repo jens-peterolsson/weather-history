@@ -9,7 +9,8 @@ const dialect = 'mysql';
 
 const sequelize = new Sequelize(database, username, password, {
   host,
-  dialect
+  dialect,
+  logging: false
 });
 
 const model = sequelize.define(table, {
