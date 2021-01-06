@@ -6,6 +6,7 @@ nederbördsmängd summa 1 dygn, 1 gång/dygn, kl 06: 5
 snödjup momentanvärde, 1 gång/dygn, kl 06: 8
 temperatur min, 1 gång per dygn: 19
 temperatur max, 1 gång per dygn: 20
+solskenstid: 10, verkar dock vara andra stationer... också värden 1 gång per timme
 
 Hämta
 
@@ -25,4 +26,3 @@ stationer
 Ex.
 https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/2/station/98210/period/corrected-archive/data.csv
 https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/2/station/98210/period/latest-months/data.json
-
